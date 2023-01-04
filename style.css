@@ -1,0 +1,26 @@
+#app {
+  overflow: hidden;
+  touch-action: pan-up;
+  color: #ffffff;
+  font-family: 'Monsterrat', sans-serif;
+  text-align: center;
+  text-shadow: 0 05px #ffffff, 0 020px #000, 0 0 30px #000;
+}
+
+#app h1 {
+  --fontsize: 60px;
+  --lineHeight: 200px;
+  width: auto;
+  height: calc(2* var(--lineHeight));
+  line-height: var(--lineHeight);
+  margin: calc(50vh-var(--lineHeight)) auto 0;
+  font-size: var(--fontsize);
+  text-transform: uppercase;
+}
+
+#app canvas {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}

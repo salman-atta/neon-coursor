@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NEON EffECTS </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div id="hero">
+        <h1>NEON <br> EFFECTS</h1>
+      </div>
+    </div>
+    <script type="module">
+      import {neonCursor} from "https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js";
+
+      neonCursor ({
+        el: document.getElementById('app'),
+          shaderPoints: 16,
+          curvePoint:0.5,
+          radius1:5,
+          radius2: 30,
+          VelocityTreshold: 10,
+          sleepRadiusX:100,
+          sleepRadiusY:100,
+          sleepTimeCoefX: 0.0025,
+          sleepTimeCoefY: 0.0025,
+      })
+
+    </script>
+  </body>
+</html>
